@@ -19,14 +19,16 @@ public class semonster2 {
     int mnumber = r.nextInt(N);
 
     // 進化処理。現時点では特定のレア度を超えた場合進化処理。
-    int evolve = 3;
-    if (this.rare <= evolve) {
+    int evolve_line = 3;
+    if (this.rare <= evolve_line) {
       String monsters[] = { "スライムベス", "スーパーサハギン", "スーパードラゴン", "スーパーデュラハン", "シーサーペント改" };
       return monsters[mnumber];
+
     } else {
       String monsters[] = { "スライム", "サハギン", "ドラゴン", "デュラハン", "シーサーペント" };
       return monsters[mnumber];
     }
+
   }
 
   int randomRarity() {
