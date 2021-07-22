@@ -10,13 +10,17 @@ public class semonster2 {
   }
 
   String summonMonster(int mnumber) {
-    String monsters[] = { "スライム", "サハギン", "ドラゴン", "デュラハン", "シーサーペント" };
-    return monsters[mnumber];
+    if (this.rare <= 3) {
+      String monsters[] = { "スライムベス", "スーパーサハギン", "スーパードラゴン", "スーパーデュラハン", "シーサーペント改" };
+      return monsters[mnumber];
+    } else {
+      String monsters[] = { "スライム", "サハギン", "ドラゴン", "デュラハン", "シーサーペント" };
+      return monsters[mnumber];
+    }
   }
 
   @Override
   public String toString() {
-
     return this.name + ":レア度[" + this.rare + "]\n";
   }
 }

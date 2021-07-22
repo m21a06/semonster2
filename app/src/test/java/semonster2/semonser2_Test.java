@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 public class semonser2_Test {
   @Test
   public void testsemonster2() {
-    App classUnderTest = new semonster2();
-    assertNotNull("ドラゴン", classUnderTest.getGreeting());
+    semonster2 Test = new semonster2(3, 5);
+    assertNotNull("ドラゴン:レア度[5]", Test.toString());
   }
 }
