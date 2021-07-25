@@ -7,8 +7,8 @@ public class semonster2 {
   private int rare; // 戦うとレア度が高いほうが勝つ．同じ場合は引き分け
 
   semonster2() {
-    this.name = this.summonMonster();
     this.rare = this.randomRarity();
+    this.name = this.summonMonster();
   }
 
   String summonMonster() {
@@ -21,7 +21,7 @@ public class semonster2 {
     // 進化処理
     String monsters[] = { "スライム", "サハギン", "ドラゴン", "デュラハン", "シーサーペント", "コメツキムシ" };
     String monstersEvolve[] = { "スライムベス", "スーパーサハギン", "スーパードラゴン", "スーパーデュラハン", "シーサーペント改", "コメツキイソベムシ" };
-    if (this.rare <= 3) {
+    if (this.rare >= 4) {
       System.out.println("おや？" + monsters[mnumber] + "の様子が・・・");
       System.out.println(monsters[mnumber] + "が" + monstersEvolve[mnumber] + "に進化した！！");
       return monstersEvolve[mnumber];
@@ -40,7 +40,6 @@ public class semonster2 {
 
   @Override
   public String toString() {
-
     return this.name + ":レア度[" + this.rare + "]\n";
   }
 }
