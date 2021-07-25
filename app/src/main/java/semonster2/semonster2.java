@@ -11,10 +11,10 @@ public class semonster2 {
 
   String summonMonster(int mnumber) {
     if (this.rare <= 3) {
-      String monsters[] = { "スライムベス", "スーパーサハギン", "スーパードラゴン", "スーパーデュラハン", "シーサーペント改" };
+      String monsters[] = { "スライムベス", "スーパーサハギン", "スーパードラゴン", "スーパーデュラハン", "シーサーペント改" , "コメツキイソベムシ"};
       return monsters[mnumber];
     } else {
-      String monsters[] = { "スライム", "サハギン", "ドラゴン", "デュラハン", "シーサーペント" };
+      String monsters[] = { "スライム", "サハギン", "ドラゴン", "デュラハン", "シーサーペント" , "コメツキムシ"};
       return monsters[mnumber];
     }
   }
