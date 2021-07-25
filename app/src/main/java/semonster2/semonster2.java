@@ -26,6 +26,7 @@ public class semonster2 {
       System.out.println(monsters[mnumber] + "が" + monstersEvolve[mnumber] + "に進化した！！");
       return monstersEvolve[mnumber];
     } else {
+      System.out.println("ふん、レア度たったの" + this.rare + "か…");
       return monsters[mnumber];
     }
   }
