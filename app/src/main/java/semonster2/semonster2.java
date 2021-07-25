@@ -39,6 +39,14 @@ public class semonster2 {
     return r.nextInt(N) + 1;
   }
 
+  public String getMonster() {
+    return this.name;
+  }
+
+  public int getRarity() {
+    return this.rare;
+  }
+
   @Override
   public String toString() {
     return this.name + ":レア度[" + this.rare + "]\n";

@@ -10,6 +10,11 @@ public class App {
 
   public static void main(String[] args) {
     System.out.println(new App().getGreeting());
-    System.out.println(new player().toString());
+
+    player p1 = new player("isobe");
+    player p2 = new player("cafe");
+
+    Battle battle = new Battle();
+    battle.startBattle(p1, p2);
   }
 }
