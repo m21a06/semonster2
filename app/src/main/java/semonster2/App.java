@@ -11,5 +11,9 @@ public class App {
   public static void main(String[] args) {
     System.out.println(new App().getGreeting());
     System.out.println(new semonster2(2, 5).toString());
+    Player p1 = new Player();
+    Player p2 = new Player();
+
+    p1.
   }
 }
