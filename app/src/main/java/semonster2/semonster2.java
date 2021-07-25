@@ -15,7 +15,7 @@ public class semonster2 {
 
     if (this.rare <= 3) {
       System.out.print("おや？" + monsters[mnumber] + "の様子が・・・");
-      System.out.print(monsters[mnumber] + "が" + monsters[mnumber] + "に進化した！！");
+      System.out.print(monsters[mnumber] + "が" + monstersEvolve[mnumber] + "に進化した！！");
       return monstersEvolve[mnumber];
     } else {
       return monsters[mnumber];
