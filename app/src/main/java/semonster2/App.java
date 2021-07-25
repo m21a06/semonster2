@@ -10,6 +10,6 @@ public class App {
 
   public static void main(String[] args) {
     System.out.println(new App().getGreeting());
-    System.out.println(new semonster2().toString());
+    System.out.println(new player().toString());
   }
 }

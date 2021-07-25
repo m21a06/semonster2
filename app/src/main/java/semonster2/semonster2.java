@@ -18,7 +18,7 @@ public class semonster2 {
     Random r = new Random();
     int mnumber = r.nextInt(N);
 
-    //進化処理
+    // 進化処理
     String monsters[] = { "スライム", "サハギン", "ドラゴン", "デュラハン", "シーサーペント", "コメツキムシ" };
     String monstersEvolve[] = { "スライムベス", "スーパーサハギン", "スーパードラゴン", "スーパーデュラハン", "シーサーペント改", "コメツキイソベムシ" };
     if (this.rare <= 3) {
@@ -40,7 +40,6 @@ public class semonster2 {
 
   @Override
   public String toString() {
-
     return this.name + ":レア度[" + this.rare + "]\n";
   }
 }
