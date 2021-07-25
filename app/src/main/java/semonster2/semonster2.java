@@ -10,11 +10,14 @@ public class semonster2 {
   }
 
   String summonMonster(int mnumber) {
+    String monsters[] = { "スライム", "サハギン", "ドラゴン", "デュラハン", "シーサーペント" };
+    String monstersEvolve[] = { "スライムベス", "スーパーサハギン", "スーパードラゴン", "スーパーデュラハン", "シーサーペント改" };
+
     if (this.rare <= 3) {
-      String monsters[] = { "スライムベス", "スーパーサハギン", "スーパードラゴン", "スーパーデュラハン", "シーサーペント改" , "コメツキイソベムシ"};
-      return monsters[mnumber];
+      System.out.print("おや？" + monsters[mnumber] + "の様子が・・・");
+      System.out.print(monsters[mnumber] + "が" + monstersEvolve[mnumber] + "に進化した！！");
+      return monstersEvolve[mnumber];
     } else {
-      String monsters[] = { "スライム", "サハギン", "ドラゴン", "デュラハン", "シーサーペント" , "コメツキムシ"};
       return monsters[mnumber];
     }
   }
