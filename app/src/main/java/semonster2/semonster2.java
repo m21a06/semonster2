@@ -14,21 +14,20 @@ public class semonster2 {
   String summonMonster() {
     // モンスター選択のランダム処理
     // Nはモンスター数なので追加した場合随時変更
-    int N = 5;
+    int N = 6;
     Random r = new Random();
     int mnumber = r.nextInt(N);
 
-    // 進化処理。現時点では特定のレア度を超えた場合進化処理。
-    int evolve_line = 3;
-    if (this.rare <= evolve_line) {
-      String monsters[] = { "スライムベス", "スーパーサハギン", "スーパードラゴン", "スーパーデュラハン", "シーサーペント改" };
-      return monsters[mnumber];
-
+    //進化処理
+    String monsters[] = { "スライム", "サハギン", "ドラゴン", "デュラハン", "シーサーペント", "コメツキムシ" };
+    String monstersEvolve[] = { "スライムベス", "スーパーサハギン", "スーパードラゴン", "スーパーデュラハン", "シーサーペント改", "コメツキイソベムシ" };
+    if (this.rare <= 3) {
+      System.out.print("おや？" + monsters[mnumber] + "の様子が・・・");
+      System.out.print(monsters[mnumber] + "が" + monstersEvolve[mnumber] + "に進化した！！");
+      return monstersEvolve[mnumber];
     } else {
-      String monsters[] = { "スライム", "サハギン", "ドラゴン", "デュラハン", "シーサーペント" };
       return monsters[mnumber];
     }
-
   }
 
   int randomRarity() {
