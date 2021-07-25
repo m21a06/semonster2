@@ -41,6 +41,7 @@ public class semonster2 {
 
   @Override
   public String toString() {
+
     return this.name + ":レア度[" + this.rare + "]\n";
   }
 }
