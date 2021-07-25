@@ -10,8 +10,8 @@ public class semonster2 {
   }
 
   String summonMonster(int mnumber) {
-    String monsters[] = { "スライム", "サハギン", "ドラゴン", "デュラハン", "シーサーペント" };
-    String monstersEvolve[] = { "スライムベス", "スーパーサハギン", "スーパードラゴン", "スーパーデュラハン", "シーサーペント改" };
+    String monsters[] = { "スライム", "サハギン", "ドラゴン", "デュラハン", "シーサーペント", "コメツキムシ" };
+    String monstersEvolve[] = { "スライムベス", "スーパーサハギン", "スーパードラゴン", "スーパーデュラハン", "シーサーペント改", "コメツキイソベムシ" };
 
     if (this.rare <= 3) {
       System.out.print("おや？" + monsters[mnumber] + "の様子が・・・");
