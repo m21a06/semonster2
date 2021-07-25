@@ -22,8 +22,8 @@ public class semonster2 {
     String monsters[] = { "スライム", "サハギン", "ドラゴン", "デュラハン", "シーサーペント", "コメツキムシ" };
     String monstersEvolve[] = { "スライムベス", "スーパーサハギン", "スーパードラゴン", "スーパーデュラハン", "シーサーペント改", "コメツキイソベムシ" };
     if (this.rare <= 3) {
-      System.out.print("おや？" + monsters[mnumber] + "の様子が・・・");
-      System.out.print(monsters[mnumber] + "が" + monstersEvolve[mnumber] + "に進化した！！");
+      System.out.println("おや？" + monsters[mnumber] + "の様子が・・・");
+      System.out.println(monsters[mnumber] + "が" + monstersEvolve[mnumber] + "に進化した！！");
       return monstersEvolve[mnumber];
     } else {
       return monsters[mnumber];
