@@ -25,7 +25,7 @@ public class player {
   @Override
   public String toString() {
     String info = "";
-    info += "Deck:" + this.name;
+    info += "Deck:" + this.name + "\n";
     for (int i = 0; i < 5; i++) {
       info += this.list.get(i).toString();
     }
